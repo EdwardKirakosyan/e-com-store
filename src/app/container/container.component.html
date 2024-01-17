@@ -1,0 +1,13 @@
+<div class='ekart--product--container'>
+  <app-search (searchTextChange)="setSearchText($event)"></app-search>
+  <product-list [searchText]="searchText" #productListComponent></product-list>
+  <product-detail
+    [productListComp]="productListComponent"
+    *ngIf="productListComponent.selectedProduct">
+  </product-detail>
+  <div class="ekart-featured-products">
+    <div class="ekart-featured-product-heading">
+      <div>Latessssst</div>
+    </div>
+  </div>
+</div>
