@@ -10,8 +10,4 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  clickHandle() {
-    alert('ssss!!!!!');
-  }
-  title = '--ABC--';
 }
