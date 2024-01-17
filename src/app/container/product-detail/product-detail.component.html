@@ -11,16 +11,16 @@
       <h2>{{ product.name }}</h2>
     </div>
     <div class="ekart-product-detail-gbc">
-      <span>{{ product.gender }}</span>
-      <span>{{ product.brand }}</span>
+      <span>{{ product.name }}</span>
+      <span>{{ product.name }}</span>
       <span>{{ product.category }}</span>
     </div>
     <div class="ekart-product-detail-price">
       <p>
         <b>Price Each Pair:</b>
         <span style="background-color: red; color:white"><s>{{"$" + product.price}}</s></span>
-        @if (product.discountPrice) {
-        <span style="background-color: green; color:white">{{"$" + product?.discountPrice}}</span> (Inclusive of all
+        @if (product.price) {
+        <span style="background-color: green; color:white">{{"$" + product?.price}}</span> (Inclusive of all
         taxes)
         }
       </p>
@@ -30,7 +30,7 @@
         <h4>Available Size</h4>
       </div>
       <div style="margin-top: 20px">
-        @for (s of product.size; track s) {
+        @for (s of product.name; track s) {
         <span class="ekart-product-detail-available-size">{{ s }}</span>
         }
       </div>
@@ -41,7 +41,7 @@
         <h4>Available Color</h4>
       </div>
       <div style="margin-top: 20px;">
-        @for (col of product.color; track col) {
+        @for (col of product.name; track col) {
         <span
           class="ekart-product-detail-available-color"
           [style]="{backgroundColor: col}">

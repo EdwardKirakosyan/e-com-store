@@ -1,16 +1,13 @@
 export class Product {
   id: number;
   name: string;
-  description: string;
-  brand: string;
-  gender: string;
-  category: string;
-  size: number[];
-  color: string[];
-  price: number;
-  discountPrice?: number;
   is_in_inventory: boolean;
-  items_left: number;
+  price: number;
+  description: string;
+  category: string;
   imageURL: string;
-  slug: string;
+  rating: {
+    rate: number,
+    count: number
+  };
 }
