@@ -1,17 +1,18 @@
 .ekart--header {
   width: 100%;
-  height: 11vh;
+  height: 5em;
   display: flex;
   flex-wrap: wrap;
   border-bottom: #E5E4E2 1.5px solid;
 }
 
 .ekart-logo {
-  padding: 1.2vh 8vh;
-  font-size: 40px;
+  padding: 0 1em;
+  font-size: 30px;
   font-weight: bold;
   color: #36454F;
-  width: 20%;
+  width: 15%;
+  background-color: #E3E3FC;
 }
 
 .ekart--header--nav {

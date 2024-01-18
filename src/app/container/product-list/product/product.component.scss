@@ -1,6 +1,7 @@
 .ekart--product--item {
   width: 290px;
-  background-color: #d7eeee;
+  height: 98%;
+  background-color: #E3E3FC;
   margin: 10px 10px;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -8,6 +9,7 @@
   padding-right: 10px;
   border: #efefef 2px solid;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .ekart-wishlist-sale-container {

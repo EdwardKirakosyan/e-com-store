@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './main-menu.component.scss',
 })
 export class MainMenuComponent {
-  mainMenuItems: string[] = ['home', 'prod', 'sale', 'font'];
+  mainMenuItems: string[] = ['Home', 'Acseseries', 'Electronics', 'Other'];
 }

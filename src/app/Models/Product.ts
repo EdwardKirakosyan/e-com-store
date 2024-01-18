@@ -3,6 +3,7 @@ export class Product {
   name: string;
   is_in_inventory: boolean;
   price: number;
+  discount?: number;
   description: string;
   category: string;
   imageURL: string;

@@ -3,15 +3,15 @@
     <div class="ekart--add--to--wishlist">
       <i class="fa fa-heart-o" aria-hidden="true"></i>
     </div>
-    <div *ngIf='product.price' class="ekart-on-sale-tag">
-      {{ (100 - (product.price / product.price) * 100).toFixed(0) }}% OFF
+    <div *ngIf='product.discount' class="ekart-on-sale-tag">
+      {{ (100 - (product.discount / product.price) * 100).toFixed(0) }}% OFF
     </div>
   </div>
   <div class="ekart--product--image">
     <img [src]="product.imageURL" class="ekart--product--image">
   </div>
   <div class="ekart--add--to--price">
-    {{ product.price }}
+    {{ product.rating.count }}
   </div>
   <div class="ekart--product--name">{{ product.name }}</div>
   <div class="ekart--product--category">{{ product.name }} . {{ product.category }} . {{ product.name }}</div>
