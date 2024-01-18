@@ -1,28 +1,37 @@
 .ekart--search--product {
+  display: flex;
+  flex-direction: column;
   margin: 20px auto;
   text-align: center;
 }
 
 .ekart-search-product-input {
-  width: 40%;
-  height: 5.5vh;
-  padding: 1px 10px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
   outline: none;
-  border-radius: 2px;
-  background-color: #efefef;
-  border: #28282B 1px solid;
+  background-color: #e3e3fc;
+  border: none;
+  border-radius: 4px;
 }
 
 .btn {
+  margin: 0.5em auto;
   padding: 5px 10px;
   border: none;
+  border-radius: 4px;
 }
 
 .btn-search {
-  padding: 12px 30px;
-  background-color: #28282B;
-  margin-left: -5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #5454ff;
   color: #fff;
+}
+
+.btn-search:hover {
+  background-color: #1818ff;
 }
 
 .btn-search-disabled {
